@@ -6,6 +6,8 @@ export default function KeyPad() {
 
     return (
         <section>
+            {/* code for keys display */}
+
             <Key clear={true} />
             <Key value="MOD" color={false} />
             <Key value=" % " color={false} />
@@ -31,6 +33,7 @@ export default function KeyPad() {
             <Key del={true} />
             <Key equalTo={true} color={true} />
 
+        {/* code for keys display */}
         </section>
     )
 }

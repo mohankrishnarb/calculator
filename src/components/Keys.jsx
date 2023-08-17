@@ -49,24 +49,36 @@ export default function Key({ color, value, clear, del, equalTo }) {
             for (let i = 0; i < expArray.length; ++i) {
                 switch (expArray[i]) {
                     case 'x':
+                        /* code for multiply */
                         result *= Number(expArray[i + 1]);
                         break;
+                        /* code for multiply */
 
+                        /* code for addition */
                     case '+':
                         result += Number(expArray[i + 1]);
                         break;
+                        /* code for addition */
 
+                        /* code for subtraction */
                     case '-':
                         result -= Number(expArray[i + 1]);
                         break;
+                        /* code for subtraction */
 
+                        /* code for division */
                     case '/':
                         result /= Number(expArray[i + 1]);
                         break;
+                        /* code for division */
 
+
+                    /* code for modulus */
                     case '%':
                         result = (result * Number(expArray[i + 1]) / 100);
                         break;
+
+                    /* code for modulus */
 
                     default:
                         break;

@@ -7,9 +7,11 @@ export default function Screen(){
     const [expression] = useContext(ExpressionContext);
     const [result] = useContext(ResultContext)
     return(
+        /* displays clicked number on screen */
     <section className={style.screenSection}>
         <p className={style.screenExpression} > {expression} </p>
         <p className={`${style.screenInputOutput} display-6`} > {result} </p>
     </section>
+    /* displays clicked number on screen */
     )
 }
